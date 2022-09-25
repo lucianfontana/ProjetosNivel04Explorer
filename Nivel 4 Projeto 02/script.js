@@ -1,5 +1,19 @@
 let optional = 0
-let students = [];
+let students = [{
+  name : `carlos`,
+  oneNot : 9.5,
+  secNot : 9
+},
+{
+  name : `marcos`,
+  oneNot : 5,
+  secNot : 7.5
+},
+{
+  name : `juarez`,
+  oneNot : 4,
+  secNot : 3.8
+}];
 
 function calculo(student) {
   let final = (student.oneNot + student.secNot) / 2
@@ -21,7 +35,8 @@ alert(`Nesse desafio você irá criar uma lista de **estudantes** e, cada estuda
 while (optional != 3 ){
 
 
-optional = Number(prompt(`Digite a opção desejada:
+optional = Number(prompt(`Existe ${students.length} estudantes na memória
+Digite a opção desejada:
 1.Adicionar um novo aluno
 2.Listar alunos aprovados e reprovados
 3.Sair do programa`))
